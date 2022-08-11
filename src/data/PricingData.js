@@ -1,40 +1,27 @@
-export const pricingData = [
-	{
-		title: 'Basic',
-		price: '$7.99 user/month after offer period',
-		numAcc: '50-100 accounts',
-		features: ['Secure accounts', 'Best for small business', 'Easy', 'Affordable', '1GB RAM'],
-	},
-	{
-		title: 'Standard',
-		price: '$18.99 user/month after offer period',
-		numAcc: '50-500 accounts',
-		features: [
-			'Secure accounts',
-			'Best for small business',
-			'Customizable',
-			'3GB RAM',
-			'1TB SSD',
-		],
-	},
-	{
-		title: 'Premium',
-		price: '$32.50 user/month after offer period',
-		numAcc: '50-1000 accounts',
-		features: [
-			'Secure accounts',
-			'Best for small business',
-			'Customizable',
-			'Easy Integration',
-			'Development Team',
-			'DNS & Domain included',
-		],
-	},
+export const PriceData = [
+    {
+        id: 1,
+        title: "Basic",
+        price: "$2500/month after offer period ",
+        rating: "6.1",
+    },
+    {
+        id: 2,
+        title: "Standard",
+        price: "$3000/month after offer period",
+        rating: "7.2",
+    },
+    {
+        id: 3,
+        title: "Premium",
+        price: "$3500/month after offer period",
+        rating: "8.3",
+    },
 
-	{
-		title: 'Enterprise',
-		price: '$55.50 user/month after offer period ',
-		numAcc: '1000+ Accounts',
-		features: ['Unlimited Storage', 'Scalability', 'Free DNS & Domain'],
-	},
+    {
+        id: 4,
+        title: "Enterprise",
+        price: "$4000/month after offer period ",
+        rating: "9.5",
+    },
 ];

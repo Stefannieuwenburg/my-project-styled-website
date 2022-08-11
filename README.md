@@ -1,8 +1,15 @@
-# my project styled components
+# my project !!! Team Project !!!
+
+React 18.2.0
+Style Components
+Smooth scroling
 GlobalStyle from styled-components
 
 # with npm
+
 npm install --save styled-components
+npm i react-router-hash-link
+npm i react-icons 
 
 # Getting Started with Create React App
 
