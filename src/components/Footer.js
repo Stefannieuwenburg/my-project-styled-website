@@ -44,6 +44,8 @@ const FooterLinks = styled.p`
     margin: 0.2rem;
 `;
 const FooterCopyricht = styled.p`
+    margin-top: 1, 2rem;
+    text-align: center;
     color: var(--Gray);
     font-size: 1.2rem;
     margin: 0.2rem;
