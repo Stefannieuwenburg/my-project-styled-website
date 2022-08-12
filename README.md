@@ -1,13 +1,14 @@
-# my project !!! Team Project !!!
+# My project !!! Team Project !!!
 
-React 18.2.0
-Style Components
-Smooth scroling
-GlobalStyle from styled-components
+# Tech used:
+- React 18.2.0
+- Style Components
+- GlobalStyle from styled-components
+- Data APIs
+- GitHub
 
-# with npm
-
-npm install --save styled-components
+# Npm Install
+npm i styled-components
 npm i react-router-hash-link
 npm i react-icons 
 

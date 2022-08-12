@@ -5,8 +5,7 @@ import img from '../assets/img/teamwork.jpg';
 
 
 const HeroContainer = styled.div`
-/*  */
-
+    margin: 0rem;
 `;
 const HeroSection = styled.section`
     display: flex;

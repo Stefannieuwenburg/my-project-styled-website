@@ -43,6 +43,11 @@ const FooterTitle = styled.h1`
 const FooterLinks = styled.p`
     margin: 0.2rem;
 `;
+const FooterCopyricht = styled.p`
+    color: var(--Gray);
+    font-size: 1.2rem;
+    margin: 0.2rem;
+`;
 
 function Footer() {
     return (
@@ -62,6 +67,10 @@ function Footer() {
                     </CardBody2>
                 ))}
             </FooterContainer>
+            <FooterCopyricht>
+                © Copyright 2022 | Ontwikkeling door Stefan Nieuwenburg Services
+                | Alle rechten voorbehouden.
+            </FooterCopyricht>
         </Fragment>
     );
 }
