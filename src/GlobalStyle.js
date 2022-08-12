@@ -1,5 +1,3 @@
-// @import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&display=swap');
-
 import "typeface-roboto";
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";

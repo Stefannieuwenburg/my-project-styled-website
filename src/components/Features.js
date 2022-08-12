@@ -1,4 +1,3 @@
-import React, { Fragment } from "react";
 import styled from "styled-components";
 import { HeaderTitle } from "../GlobalStyle";
 import { featuresData } from "../data/FeaturesData";
