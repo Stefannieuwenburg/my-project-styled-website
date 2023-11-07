@@ -110,7 +110,8 @@ export default class NavHeader extends Component {
                             }
                         >
                             <li>
-                                <Link smooth to="#HeaderHero">
+                                <Link
+                                    smooth to="#HeaderHero">
                                     Home
                                 </Link>
                             </li>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { HeaderTitle } from "../GlobalStyle";
 import { featuresData } from "../data/FeaturesData";
 
+
 const FeatureBox = styled.div`
   margin-top:15rem;
   padding: 8rem;
