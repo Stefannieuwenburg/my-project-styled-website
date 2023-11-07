@@ -1,19 +1,25 @@
+import React, { Fragment } from "react";
 import styled from "styled-components";
 import { HeaderTitle } from "../GlobalStyle";
 import { featuresData } from "../data/FeaturesData";
+
+const FeatureBox = styled.div`
+  margin-top:15rem;
+  padding: 8rem;
+`;
 
 const FeaturesContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 1rem;
-    margin: 7.2rem;
+    justify-content: center;
 `;
 
 const CardBody = styled.div`
     min-width: 0;
     max-width: 300px;
-    padding: 1.25rem;
+    margin:0.2rem;
     background-color: var(--Orange);
     border-radius: 1.5rem;
 `;
@@ -31,6 +37,7 @@ const FeatureLogo = styled.div`
 const FeatureParagraph = styled.p`
     color: white;
     font-size: 1.2rem;
+    margin:0.2rem;
 `;
 
 
@@ -38,8 +45,9 @@ const FeatureParagraph = styled.p`
 function Features() {
     return (
         <Fragment>
-            <HeaderTitle>What Team Project offers you</HeaderTitle>
-            <FeaturesContainer id="Features">
+            <FeatureBox id="Features">
+                <FeaturesContainer >
+                <HeaderTitle>What Team Project offers you</HeaderTitle>
                 {featuresData.map((item) => (
                     <CardBody>
                         <FeatureTitle>{item.name}</FeatureTitle>
@@ -48,6 +56,8 @@ function Features() {
                     </CardBody>
                 ))}
             </FeaturesContainer>
+            </FeatureBox>
+            
         </Fragment>
     );
 }

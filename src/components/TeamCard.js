@@ -2,21 +2,27 @@ import React, { Fragment } from "react";
 import styled from "styled-components";
 import ScrumTeam from '../assets/img/Team.jpg';
 import ProjectTeam from "../assets/img/teamwork.jpg";
-import DeveloperTeam from "../assets/img/DeveloperTeam.jpg";
+
 const TeamContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 1rem;
-    
+    justify-content:center;
+    padding:8rem;
 `;
 const TeamCard = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 2px solid #e7e7e7;
     border-radius: 1.2rem;
-    padding: 0.5rem;
+    padding: 2rem;
+    
 `;
 const CardImage = styled.img`
-    width: 100%;
+    width: 75%;
+    
     
 `;
 const TeamTitle = styled.h1`
@@ -38,15 +44,11 @@ const TeamText = styled.p`
 const Team = () => {
     return (
         <Fragment>
-            <TeamTitle>meet your team</TeamTitle>
             <TeamContainer>
+                 <TeamTitle>meet your team</TeamTitle>
                 <TeamCard>
                     <CardImage src={ScrumTeam}></CardImage>
                     <TeamText>scrum planning</TeamText>
-                </TeamCard>
-                <TeamCard>
-                    <CardImage src={DeveloperTeam}></CardImage>
-                    <TeamText>Developer Team </TeamText>
                 </TeamCard>
                 <TeamCard>
                     <CardImage src={ProjectTeam}></CardImage>

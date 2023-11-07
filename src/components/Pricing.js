@@ -8,7 +8,12 @@ const PricingContainer = styled.div`
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 1rem;
-    margin: 6.2rem;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    padding:10rem;
+    
+    
 `;
 const Card = styled.div`
     min-width: 0;
@@ -41,16 +46,20 @@ const CardRating = styled.p`
 
 
 function Pricing() {
+    const handleClick = () => {
+        window.location.href = "#Features";
+    }
     return (
         <Fragment>
-            <HeaderTitle>Best pricing</HeaderTitle>
+            
             <PricingContainer id="Pricing">
+                 <HeaderTitle>Best pricing</HeaderTitle>
                 {PriceData.map((item) => (
                     <Card>
                         <PricingHeader>{item.title}</PricingHeader>
                         <PricingParagraph>{item.price}</PricingParagraph>
                         <CardRating>{item.rating}</CardRating>
-                        <Button>more info</Button>
+                        <Button onClick={handleClick}>more info</Button>
                     </Card>
                 ))}
             </PricingContainer>

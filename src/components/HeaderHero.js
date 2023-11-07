@@ -56,6 +56,10 @@ const HeroButton = styled.button`
 `;
 
 const HeaderHero = () => {
+    const handleClick = () => {
+        window.location.href = "#Features";
+    };
+    
     return (
         <HeroContainer id="HeaderHero">
             <HeroSection>
@@ -63,7 +67,7 @@ const HeaderHero = () => {
                 <HeroDescription>
                     Boost up your team connect to Team Project
                 </HeroDescription>
-                <HeroButton>Click me for More</HeroButton>
+                <HeroButton onClick={handleClick}>Click me for More</HeroButton>
             </HeroSection>
         </HeroContainer>
     );
